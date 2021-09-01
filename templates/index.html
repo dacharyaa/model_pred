@@ -1,0 +1,39 @@
+<html>
+<head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="/static/css/style.css" rel="stylesheet">
+<!------ Include the above in your HEAD tag ---------->
+</head>
+<body>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+
+    <!-- Login Form -->
+    <form action="/insert" method="POST">
+
+
+
+      <input type="text" id="login" class="fadeIn second" name="process" placeholder="Process Temp" required>
+      <input type="text" id="r1" class="fadeIn second" name="rotational" placeholder="Rotational Speed" required>
+      <input type="text" id="r2" class="fadeIn second" name="torque" placeholder="Torque" required>
+      <input type="text" id="r3" class="fadeIn second" name="tool" placeholder="Tool Wear" required>
+      <input type="text" id="r4" class="fadeIn second" name="twf" placeholder="TWF" required>
+      <input type="text" id="r5" class="fadeIn second" name="hdf" placeholder="HDF" required>
+      <input type="text" id="r6" class="fadeIn second" name="pwf" placeholder="PWF" required>
+      <input type="text" id="r7" class="fadeIn second" name="osf" placeholder="OSF" required>
+      <input type="text" id="r8" class="fadeIn second" name="rnf" placeholder="RNF" required>
+      <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
+     <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="/sign">Sign UP</a>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
