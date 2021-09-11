@@ -8,14 +8,14 @@ from sklearn.linear_model import Ridge,Lasso,RidgeCV,LarsCV,ElasticNet,ElasticNe
 import statsmodels.api as sm
 from  Model_Logic import mod_log
 
-application = Flask(__name__)
+app = Flask(__name__)
 
-@application.route('/', methods=['GET', 'POST']) # To render Homepage
+@app.route('/', methods=['GET', 'POST']) # To render Homepage
 def home_page():
     return render_template('index.html')
 
 
-@application.route('/insert', methods=['GET','POST'])  # insert a player to DB
+@app.route('/insert', methods=['GET','POST'])  # insert a player to DB
 def insert():
     print('AirTemp Prediction---------')
 
@@ -36,4 +36,4 @@ def insert():
         return render_template('result.html', res= res)
 
 if __name__ == '__main__':
-    application.run(debug=True)
+    app.run(debug=True)
